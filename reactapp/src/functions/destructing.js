@@ -1,0 +1,1 @@
+function getUserIpDetails(user)
