@@ -11,17 +11,7 @@
     const [firstMark = null, secondMark = null, thirdMark = null, ...rest] = studentMarks;
   
     // Return an array containing the top three student details
-    return [
-      {firstMark },
-      { mark: secondMark },
-      { mark: thirdMark },
-    ];
+    return [firstMark, secondMark, thirdMark].sort();
   }
   
-  // Test the functions
-  const userIpDetails = getUserIpDetails(userResponse);
-  console.log('User IP Details:', userIpDetails);
-  
-  const topThreeStudents = getTopThree(studentMarks);
-  console.log('Top Three Students:', topThreeStudents);
-  
+  export {getUserIpDetails, getTopThree}
